@@ -1,7 +1,8 @@
 DFS
 BFS
 Topological Sort
-Kruskal + Disjoint Set
+Disjoint Set (Union by rank & path compression)
+Kruskal
 Prim's algo 
 Dijkstra's algo
 Held Karp(TSP)'s algo
