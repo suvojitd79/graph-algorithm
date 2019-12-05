@@ -19,7 +19,14 @@ public class Graph {
 
     public static Map<String, List<String>> getDirectedGraph(){
 
-        return null;
+        Map<String, List<String>> graph = new HashMap();
+        graph.put("A", new ArrayList<>(Arrays.asList("B","C")));
+        graph.put("B", new ArrayList<>(Arrays.asList("K")));
+        graph.put("C", new ArrayList<>(Arrays.asList("K")));
+        graph.put("K", new ArrayList<>(Arrays.asList("F")));
+        graph.put("F", new ArrayList<>());
+
+        return graph;
 
     }
 
