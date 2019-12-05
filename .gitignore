@@ -28,6 +28,6 @@
 hs_err_pid*
 
 /home/suvojit/IdeaProjects/graph-algorithm/out
-*.idea
-*out
-graph-algorithm.iml
+*.idea/
+out/
+graph-algorithm.iml/
