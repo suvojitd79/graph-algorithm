@@ -1,0 +1,14 @@
+DFS
+BFS
+Topological Sort
+Kruskal + Disjoint Set
+Prim's algo 
+Dijkstra's algo
+Held Karp(TSP)'s algo
+Bellman Ford's algo 
+Floyd warshall's algo
+Kosaraju's algo
+Cycle Detection(Directed + Undirected)
+Ford fulkerson-Edmond karp's algo
+Articulation point
+Johnson's algo
