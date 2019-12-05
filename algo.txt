@@ -5,7 +5,7 @@ Disjoint Set (Union by rank & path compression)
 Kruskal
 Prim's algo 
 Dijkstra's algo
-Held Karp(TSP)'s algo
+Held Karp's algo(TSP)
 Bellman Ford's algo 
 Floyd warshall's algo
 Kosaraju's algo
