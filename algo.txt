@@ -10,6 +10,7 @@ Bellman Ford's algo
 Floyd warshall's algo
 Kosaraju's algo
 Cycle Detection(Directed + Undirected)
-Ford fulkerson-Edmond karp's algo
+Ford fulkerson-Edmond karp's algo(Max flow)
 Articulation point
 Johnson's algo
+Critical Connections in a Network/ cut edges
