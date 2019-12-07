@@ -43,6 +43,7 @@ class Solution {
         time = 0;
 
         List<List<Integer>> graph = new ArrayList();
+
         for(int i=0;i<n;i++) graph.add(new ArrayList());
 
         for(int i=0;i<connections.size();i++){
@@ -50,11 +51,8 @@ class Solution {
             int from = connections.get(i).get(0);
             int to = connections.get(i).get(1);
 
-            if(!graph.get(from).contains(to))
-                graph.get(from).add(to);
-
-            if(!graph.get(to).contains(from))
-                graph.get(to).add(from);
+            graph.get(from).add(to);
+            graph.get(to).add(from);
 
         }
 
@@ -80,19 +78,19 @@ class Solution {
 
         for(Integer x: graph.get(curr)){
 
-              if(x == parent) continue;
+            if(x == parent) continue;
 
-              if(!visited[x]){
+            if(!visited[x]){
 
-                  dfs(graph, x, curr);
+                dfs(graph, x, curr);
 
-                  low_link[curr] = Math.min(low_link[curr], low_link[x]);
+                low_link[curr] = Math.min(low_link[curr], low_link[x]);
 
-                  if(low_link[x] > id[curr])
-                      ans.add(Arrays.asList(curr, x));
+                if(low_link[x] > id[curr])
+                    ans.add(Arrays.asList(curr, x));
 
-              }else
-                  low_link[curr] = Math.min(low_link[curr], low_link[x]);
+            }else
+                low_link[curr] = Math.min(low_link[curr], low_link[x]);
 
         }
 
@@ -100,10 +98,7 @@ class Solution {
     }
 
 
-
-
 }
-
 
 
 
@@ -114,25 +109,21 @@ public class  P16{
 
 //        Input: n = 4, connections = [[0,1],[1,2],[2,0],[1,3]]
 
+//        6
+//        [[0,1],[1,2],[2,0],[1,3],[3,4],[4,5],[5,3]]
+
+
         Solution sol = new Solution();
-        int n = 11;
+        int n = 6;
         List<List<Integer>> input = new ArrayList();
 
         input.add(Arrays.asList(0, 1));
         input.add(Arrays.asList(1, 2));
-        input.add(Arrays.asList(0, 2));
-        input.add(Arrays.asList(2, 3));
+        input.add(Arrays.asList(2, 0));
+        input.add(Arrays.asList(1, 3));
         input.add(Arrays.asList(3, 4));
         input.add(Arrays.asList(4, 5));
-        input.add(Arrays.asList(3, 5));
-
-        input.add(Arrays.asList(4, 6));
-        input.add(Arrays.asList(4, 7));
-        input.add(Arrays.asList(6, 7));
-        input.add(Arrays.asList(7, 9));
-        input.add(Arrays.asList(9, 8));
-        input.add(Arrays.asList(9, 10));
-        input.add(Arrays.asList(8, 10));
+        input.add(Arrays.asList(5, 3));
 
 
 
