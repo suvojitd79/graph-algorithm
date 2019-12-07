@@ -78,8 +78,6 @@ class Solution {
 
         for(Integer x: graph.get(curr)){
 
-            if(x == parent) continue;
-
             if(!visited[x]){
 
                 dfs(graph, x, curr);
@@ -89,7 +87,7 @@ class Solution {
                 if(low_link[x] > id[curr])
                     ans.add(Arrays.asList(curr, x));
 
-            }else
+            }else if(visited[x] && x != parent)
                 low_link[curr] = Math.min(low_link[curr], low_link[x]);
 
         }
