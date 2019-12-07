@@ -92,7 +92,7 @@ class Solution {
                       ans.add(Arrays.asList(curr, x));
 
               }else
-                  low_link[curr] = Math.min(id[curr], low_link[x]);
+                  low_link[curr] = Math.min(low_link[curr], low_link[x]);
 
         }
 
