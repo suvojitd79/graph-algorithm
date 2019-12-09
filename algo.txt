@@ -8,9 +8,10 @@ Dijkstra's algo
 Held Karp's algo(TSP)
 Bellman Ford's algo 
 Floyd warshall's algo
-Kosaraju's algo
+Kosaraju's algo(SCC)
 Cycle Detection(Directed + Undirected)
 Ford fulkerson-Edmond karp's algo(Max flow)
 Articulation point
 Johnson's algo
 Critical Connections in a Network/ cut edges
+Tarjan's algo(SCC)
